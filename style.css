@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  background: rgb(24, 22, 22);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+header {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 20%;
+
+  text-decoration: none;
+}
+nav {
+  color: white;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  margin: 30px;
+  font-size: 1.2rem;
+}
+
+li a:hover {
+  opacity: 0.3;
+  transition: 0.3s ease;
+}
+button {
+  background: white;
+  padding: 7px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.5;
+  transition: box-shadow 0.3s ease ease-in-out;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  line-height: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5rem;
+}
+
+article {
+  display: flex;
+
+  margin: 50px;
+  gap: 3em;
+}
+
+article div {
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
+    5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+article img {
+  width: 350px;
+  border-radius: 8px;
+  height: 30vh;
+}
+
+article :hover {
+  transform: scale(0.9);
+}
+
+footer {
+  padding: 5px;
+  height: 30vh;
+  background: rgb(32, 31, 31);
+  margin-top: 250px;
+  line-height: 0.8em;
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  header {
+    width: 440px;
+    margin-left: 8px;
+  }
+
+  a {
+    margin: 0.9em;
+    font-size: medium;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  footer {
+    position: relative;
+
+    height: auto;
+  }
+}
