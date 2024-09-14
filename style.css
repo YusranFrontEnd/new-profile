@@ -86,7 +86,7 @@ footer {
   line-height: 0.8em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   body {
     overflow-x: hidden;
   }
@@ -97,8 +97,10 @@ footer {
     gap: 5px;
   }
 
+  header a {
+    font-size: medium;
+  }
   header {
-    font-size: small;
     display: contents;
   }
 
