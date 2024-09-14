@@ -80,7 +80,7 @@ article :hover {
 
 footer {
   padding: 5px;
-  height: 30vh;
+  height: 33vh;
   background: rgb(22, 21, 21);
   margin-top: 250px;
   line-height: 0.8em;
@@ -98,8 +98,9 @@ footer {
   }
 
   header {
-    width: 440px;
-    margin-left: 10px;
+    margin: 0;
+    display: contents;
+    text-align: center;
   }
 
   article {
@@ -112,6 +113,6 @@ footer {
     height: auto;
   }
   article img {
-    width: fit-content;
+    width: 200px;
   }
 }
