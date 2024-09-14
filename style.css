@@ -5,10 +5,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: serif;
-  background: rgb(24, 22, 22);
+  background: rgb(17, 14, 14);
   background-size: cover;
   min-height: 100vh;
-  color: white;
+  color: rgb(253, 13, 201);
 }
 header {
   width: 58%;
@@ -19,13 +19,11 @@ header {
 
   text-decoration: none;
 }
-nav {
-  color: white;
-}
+
 a {
   text-decoration: none;
   list-style-type: none;
-  color: white;
+  color: rgb(253, 13, 201);
   margin: 30px;
   font-size: 1.2rem;
 }
@@ -64,7 +62,7 @@ article {
 }
 
 article div {
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.2),
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   text-align: center;
@@ -83,7 +81,7 @@ article :hover {
 footer {
   padding: 5px;
   height: 30vh;
-  background: rgb(32, 31, 31);
+  background: rgb(22, 21, 21);
   margin-top: 250px;
   line-height: 0.8em;
 }
@@ -91,13 +89,14 @@ footer {
 @media (max-width: 600px) {
   section {
     flex-direction: column;
-
+    max-height: none;
     text-align: center;
+    gap: 5px;
   }
 
   header {
     width: 440px;
-    margin-left: 8px;
+    margin-left: 10px;
   }
 
   a {
@@ -111,7 +110,10 @@ footer {
 
   footer {
     position: relative;
-
+    line-height: normal;
     height: auto;
+  }
+  article img {
+    width: fit-content;
   }
 }
