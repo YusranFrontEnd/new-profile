@@ -11,25 +11,24 @@ body {
   color: rgb(253, 13, 201);
 }
 header {
-  width: 58%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 0 20%;
-
+  background: rgb(37, 33, 33);
   text-decoration: none;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
   list-style-type: none;
-  color: rgb(253, 13, 201);
+  color: white;
   margin: 30px;
   font-size: 1.2rem;
 }
 
 li a:hover {
-  opacity: 0.3;
+  color: rgb(253, 13, 201);
   transition: 0.3s ease;
 }
 button {
@@ -50,7 +49,7 @@ section {
   line-height: 0.8rem;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100lvh;
   gap: 5rem;
 }
 
@@ -62,33 +61,33 @@ article {
 }
 
 article div {
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1),
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.3),
     5px 5px 15px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   text-align: center;
+  background-color: rgb(37, 35, 35);
+  width: 350px;
 }
 
 article img {
-  width: 350px;
-  border-radius: 8px;
-  height: 30vh;
-}
+  width: 300px;
 
-article :hover {
-  transform: scale(0.9);
+  height: 30vh;
+  filter: blur();
 }
 
 footer {
   padding: 5px;
   height: 33vh;
-  background: rgb(22, 21, 21);
+  background: rgb(37, 33, 33);
   margin-top: 250px;
   line-height: 0.8em;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   body {
     overflow-x: hidden;
+    text-align: center;
   }
   section {
     flex-direction: column;
@@ -96,12 +95,12 @@ footer {
     text-align: center;
     gap: 5px;
   }
+  .text {
+    margin-bottom: 120px;
+  }
 
   header a {
     font-size: medium;
-  }
-  header {
-    display: contents;
   }
 
   article {
@@ -114,6 +113,10 @@ footer {
     height: auto;
   }
   article img {
-    width: 250px;
+    width: 200px;
+  }
+
+  article div {
+    width: auto;
   }
 }
