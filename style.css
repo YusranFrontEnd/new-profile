@@ -5,10 +5,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: serif;
-  background: rgb(17, 14, 14);
+  background: linear-gradient(180deg, rgb(51, 47, 47), rgb(204, 27, 21), white);
   background-size: cover;
   min-height: 100vh;
-  color: rgb(253, 13, 201);
+  color: white;
 }
 header {
   display: flex;
@@ -32,14 +32,14 @@ li a:hover {
   transition: 0.3s ease;
 }
 button {
-  background: white;
+  background: linear-gradient(to right, rgb(253, 13, 201), rgb(161, 1, 143));
   padding: 7px;
   border-radius: 10px;
   font-weight: 600;
 }
 
 button:hover {
-  opacity: 0.5;
+  background: ;
   transition: box-shadow 0.3s ease ease-in-out;
 }
 
@@ -73,7 +73,9 @@ article img {
   width: 300px;
 
   height: 30vh;
-  filter: blur();
+}
+article div:hover {
+  transform: scale(0.9);
 }
 
 footer {
@@ -87,7 +89,6 @@ footer {
 @media (max-width: 700px) {
   body {
     overflow-x: hidden;
-    text-align: center;
   }
   section {
     flex-direction: column;
